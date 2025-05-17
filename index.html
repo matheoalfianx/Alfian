@@ -84,6 +84,29 @@
         font-size: 1em;
         padding: 12px 25px;
       }
+      .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .button {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff9900;
+    }
     }
   </style>
 </head>
@@ -102,26 +125,9 @@
   <h1>
     Now Join For Fuck Me <span style="color: red;">"LIVE NOW"</span> <span style="color: #00ffff;">Click Here</span>
   </h1>
-  <button class="btn" id="clickBtn">CONTINUE</button>
-</div>
-
-
-
-<script>
-  let clickCount = 0;
-  const firstLink = "https://cupidstats.click/redirect?aff_id=14561&offer_id=10390&aff_click_id=Alfian&aff_sub_1=Alfian";
-  
-  const secondLink = "https://cupidstats.click/redirect?aff_id=14561&offer_id=10390&aff_click_id=Alfian&aff_sub_1=Alfian";
-
-  document.getElementById("clickBtn").addEventListener("click", function () {
-    clickCount++;
-    if (clickCount === 1) {
-      window.location.href = firstLink;
-    } else {
-      window.location.href = secondLink;
-    }
-  });
-</script>
+  <div class="buttons">
+      <a href="https://track.agmurl.com/redirect?aff_id=14561&offer_id=10593&aff_click_id=Alfian&aff_sub_1=Alfian" class="button">CONTINUE</a>
+  </div>
 
 </body>
 </html>
